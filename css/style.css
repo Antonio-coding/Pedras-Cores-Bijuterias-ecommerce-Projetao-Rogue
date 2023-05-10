@@ -1,5 +1,14 @@
-Captura de tela 2023-05-04 104951.png
-Captura de tela 2023-05-04 014647.png
-Captura de tela 2023-05-04 014723.png
-Captura de tela 2023-05-04 104031.png
-Captura de tela 2023-05-04 104148.png
+body {
+  background-color: #fff9ba;
+}
+.logo {
+  align-items: center;
+  align-self: auto;
+}
+.logo img {
+  height: 2rem;
+}
+.logo p {
+  text-align: right;
+  align-items: left;
+}
