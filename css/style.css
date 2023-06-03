@@ -10,6 +10,9 @@
 .carroseul-item-img img {
     width: 250px;
 
+    margin: 0 auto;
+    width: 250px;
+
 }
 
 .texto01 {
@@ -27,13 +30,28 @@
     font-family: 'Inter', sans-serif;
 }
 
+.carroseul01{
+overflow: hidden;
+height: 500px;
+width: 500px;
+}
 
 .carroseul-item-img {
-
+    width: 250px;
     margin: 0 auto;
     width: 250px;
 }
 
+.carroseul-item {
+    display: flex;
+    transition:  transform 0.5 ease-in-out;
+    transform:  translateX(0);
+}
+.carroseul-item img {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
 
 
 p {
