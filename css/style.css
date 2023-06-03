@@ -1,16 +1,17 @@
-
-.logo img{
+.logo img {
     height: 50px;
 }
-.logo p{
+
+.logo p {
     font-size: 60px;
     font-family: 'Inter', sans-serif;
 }
 
-.carroseul-item-img img{
+.carroseul-item-img img {
     width: 250px;
-   
+
 }
+
 .texto01 {
     flex-wrap: wrap;
     flex-direction: column;
@@ -18,23 +19,24 @@
     float: right;
 }
 
-.texto01 h2{
+.texto01 h2 {
     font-family: 'IM Fell DW Pica', serif;
-} 
-.texto01 p{
+}
+
+.texto01 p {
     font-family: 'Inter', sans-serif;
-} 
+}
 
 
-.carroseul-item-img{
+.carroseul-item-img {
 
     margin: 0 auto;
-    width:  250px;
+    width: 250px;
 }
 
 
 
-p{
+p {
     font-family: 'IM Fell DW Pica', serif;
     font-family: 'Inter', sans-serif;
     font-family: 'Sarabun', sans-serif;
