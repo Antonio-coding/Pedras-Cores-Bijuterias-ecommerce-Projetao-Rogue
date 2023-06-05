@@ -59,3 +59,45 @@ p {
     font-family: 'Inter', sans-serif;
     font-family: 'Sarabun', sans-serif;
 }
+
+/*carousel*/
+.carousel {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: fit-content;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
