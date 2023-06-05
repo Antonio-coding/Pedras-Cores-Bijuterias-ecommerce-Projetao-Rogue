@@ -1,25 +1,25 @@
 .logo img {
-    height: 50px;
+  height: 50px;
 }
-
 .logo p {
-    font-size: 60px;
-    font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  width: 500px;
+  height: 71px;
+  left: 105.06px;
+  top: 14px;
 }
 
 .carroseul-item-img img {
-    width: 250px;
-
-    margin: 0 auto;
-    width: 250px;
-
+  width: 250px;
 }
 
 .texto01 {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: right;
-    float: right;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: right;
+  float: right;
 }
 
 .texto01 h2 {
