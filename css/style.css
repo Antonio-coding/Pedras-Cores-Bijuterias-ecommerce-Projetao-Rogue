@@ -14,6 +14,7 @@
 .carroseul-item-img img {
   width: 250px;
 }
+
 .texto01 {
   flex-wrap: wrap;
   flex-direction: column;
@@ -22,112 +23,39 @@
 }
 
 .texto01 h2 {
-  font-family: "IM Fell DW Pica", serif;
+    font-family: 'IM Fell DW Pica', serif;
 }
+
 .texto01 p {
-  font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
-texto02 p {
-  font-size: 10px;
-  line-height: 10;
-  letter-spacing: 10px;
+
+.carroseul01{
+overflow: hidden;
+height: 500px;
+width: 500px;
 }
 
 .carroseul-item-img {
-  margin: 0 auto;
-  width: 250px;
-}
-.carroseul-item-img {
-  height: 200;
-}
-.container_navbar {
-  position: absolute;
-  width: 1920px;
-  height: 111px;
-  left: 0px;
-  top: 0px;
+    width: 250px;
+    margin: 0 auto;
+    width: 250px;
 }
 
-.container_navbar li {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #000000;
-
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.carroseul-item {
+    display: flex;
+    transition:  transform 0.5 ease-in-out;
+    transform:  translateX(0);
 }
-.logo img {
-  position: absolute;
-  left: 0%;
-  right: 95.41%;
-  top: 0%;
-  bottom: 10.09%;
-
-  border-radius: 28px;
+.carroseul-item img {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
 }
 
-.navbar01 {
-  position: absolute;
-  width: 1920px;
-  height: 2509px;
-  left: 0px;
-  top: 133px;
-}
-.navbar02 {
-  position: absolute;
-  width: 166px;
-  height: 48px;
-  left: 1696px;
-  top: 21px;
-}
-.fa-solid fa-bars {
-  position: absolute;
-  left: 16.05%;
-  right: 68.91%;
-  top: 20.83%;
-  bottom: 29.17%;
-}
-#fa-bars {
-  position: absolute;
-  width: 16.64px;
-  height: 12px;
-  left: 30.8px;
-  top: 16px;
-
-  border: 2px solid #000000;
-}
-
-#fa-heart {
-  position: absolute;
-  left: 47.38%;
-  right: 37.58%;
-  top: 20.83%;
-  bottom: 29.17%;
-}
-
-#fa-heart {
-  position: absolute;
-  width: 20.8px;
-  height: 18px;
-  left: 80.73px;
-  top: 13px;
-}
-
-#fa-heart {
-  position: absolute;
-  width: 20.85px;
-  height: 14px;
-  left: 132.79px;
-  top: 12.05px;
-}
 
 p {
-  font-family: "IM Fell DW Pica", serif;
-  font-family: "Inter", sans-serif;
-  font-family: "Sarabun", sans-serif;
+    font-family: 'IM Fell DW Pica', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Sarabun', sans-serif;
 }
