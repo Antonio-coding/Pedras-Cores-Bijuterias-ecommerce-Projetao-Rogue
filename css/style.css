@@ -13,6 +13,20 @@
   left: 105.06px;
   top: 14px;
 }
+
+/* tela de inicio */
+.container_navbar{
+position: absolute;
+left: 10.35px;
+top: 87px;
+width: 1800.65px;
+height: 0px;
+border: 5px solid #3D3108;
+transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+
+
 /* barra de menu*/
 .container_navbar {
     display: flex;
