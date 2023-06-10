@@ -15,54 +15,49 @@
 }
 
 /* tela de inicio */
-.container_navbar{
-position: absolute;
-left: 20px;
-top: 80px;
-width: 1800.65px;
-height: 0px;
-border: 2px solid #3D3108;
-transform: matrix(1, 0, 0, 1, 0, 0);
+.container_navbar {
+  position: absolute;
+  left: 20px;
+  top: 80px;
+  width: 1800.65px;
+  height: 0px;
+  border: 2px solid #3d3108;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .container_navbar {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  
 }
 
-.container_navbar  {
+.container_navbar {
   text-align: center;
-
 }
-
 
 /* barra de menu*/
 .container_navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar01 ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .navbar01 ul li {
-    margin-right: 10px;
-  }
-  
-  .navbar01 ul li a {
-    text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  }
-  .navbar01 a {
+.navbar01 ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar01 ul li {
+  margin-right: 10px;
+}
+
+.navbar01 ul li a {
+  text-decoration: none;
+}
+.navbar01 a {
   text-decoration: none;
 }
 
-  
 /*texto*/
 
 .texto01 {
@@ -73,61 +68,57 @@ transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .texto01 h2 {
-    font-family: 'IM Fell DW Pica', serif;
+  font-family: "IM Fell DW Pica", serif;
 }
 
 .texto01 p {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-.carroseul01{
-overflow: hidden;
-height: 300px;
-width: 200px;
+.carroseul01 {
+  overflow: hidden;
+  height: 300px;
+  width: 200px;
 }
 
 .logo p {
-position: absolute;
-width: 381px;
-height: 41px;
-left: 105px;
-top: 10px; 
+  position: absolute;
+  width: 381px;
+  height: 41px;
+  left: 105px;
+  top: 10px;
 }
 .container_navbar {
-    display: flex ;
-    align-items: center;
-  }
-  
+  display: flex;
+  align-items: center;
+}
+
 .logo {
- margin-right: 10px;
-  }
-  
-
-
-
+  margin-right: 10px;
+}
 
 /*imagem*/
 .carroseul-item-img {
-    width: 300px;
-    margin: 0 auto;
-    width: 250px;
+  width: 300px;
+  margin: 0 auto;
+  width: 250px;
 }
 
 .carroseul-item {
-    display: flex;
-    transition:  transform 0.5 ease-in-out;
-    transform:  translateX(0);
+  display: flex;
+  transition: transform 0.5 ease-in-out;
+  transform: translateX(0);
 }
 .carroseul-item img {
-    object-fit: cover;
-    height: 250px;
-    width: 200px;
+  object-fit: cover;
+  height: 250px;
+  width: 200px;
 }
 
 p {
-    font-family: 'IM Fell DW Pica', serif;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Sarabun', sans-serif;
+  font-family: "IM Fell DW Pica", serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Sarabun", sans-serif;
 }
 
 /*carousel*/
@@ -175,51 +166,71 @@ p {
 
 /* Estilos para a seção principal */
 .amostras {
-    display: flex;
-    align-items: center;
-  }
-  
-  .texto01 {
-    flex: 1;
-    padding: 20px;
-  }
+  display: flex;
+  align-items: center;
+}
 
-  
-  /* Estilos para a coluna da imagem */
-  .carroseul01  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carroseul01 img {
-    max-width: 100%;
-    height: 0 auto;
-  }
+.texto01 {
+  flex: 1;
+  padding: 20px;
+}
 
-  
-  /*segunda parte da mostra */
-  .amostra02 {
-    display: flex;
-    align-items: center;
-  }
-  
-  .texto02 {
-    flex: 10;
-    padding: 100px;
-  }
-  
-  /* Estilos para a coluna da imagem */
-  .carroseul02  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carroseul02 img {
-    max-width: 100%;
-    height: 0 auto;
-  }
+/* Estilos para a coluna da imagem */
+.carroseul01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- 
-  
+.carroseul01 img {
+  max-width: 100%;
+  height: 0 auto;
+}
+
+/*segunda parte da mostra */
+.amostra02 {
+  display: flex;
+  align-items: center;
+}
+
+.texto02 {
+  flex: 10;
+  padding: 100px;
+}
+
+/* Estilos para a coluna da imagem */
+.carroseul02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carroseul02 img {
+  max-width: 100%;
+  height: 0 auto;
+}
+/*Parallax01*/
+
+.Parallax01 {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.Parallax01 .joias05-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Parallax01 .joias05-img img {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
