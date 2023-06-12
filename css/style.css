@@ -2,6 +2,8 @@
 .logo img {
   height: 50px;
   filter: saturate(70%) sepia(100%);
+  position: absolute;
+  margin-left: 10px;
 }
 
 .logo p {
@@ -16,27 +18,17 @@
 
 /* barra tela de inicio */
 .container_navbar {
-  position: absolute;
+  position: relative;
   left: 20px;
   top: 80px;
   width: 1800.65px;
   height: 0px;
   border: 2px solid #3d3108;
   transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-.container_navbar {
-  position: absolute;
+  
   left: 50%;
   transform: translateX(-50%);
-}
-
-.container_navbar {
   text-align: center;
-}
-
-/* barra de menu*/
-.container_navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;

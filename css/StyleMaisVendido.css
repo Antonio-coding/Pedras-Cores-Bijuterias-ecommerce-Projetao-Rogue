@@ -1,0 +1,299 @@
+.container_menu {
+  position: relative;
+  width: 100%;
+  height: 111px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  position: relative;
+  width: 70px;
+  height: auto;
+  left: 0px;
+  top: 0px;
+  border-radius: 28px;
+  filter: saturate(70%) sepia(100%);
+}
+/* nome do site */
+#titulo {
+  position: absolute;
+  width: 381px;
+  height: 41px;
+  left: 105px;
+  top: 14px;
+  font-family: "IM Fell DW Pica", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*NAVBAR 01*/
+.navbar01 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 566px;
+  height: 44px;
+  left: 30%;
+  top: 39px;
+  text-decoration: none;
+  align-items: center;
+}
+.navbar01 ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar01 li {
+  margin-right: 10px;
+}
+
+.navbar01 ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar01 li:hover a {
+  color: rgb(235, 211, 211);
+}
+
+/*NAVBAR02*/
+
+.navbar02 {
+  position: relative;
+  width: 166px;
+  height: 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+.navbar02 ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.navbar02 li {
+  margin-left: 10px;
+}
+.navbar02 li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*TITULO DA SEÇÂO*/
+
+.tituloSecao {
+  margin-left: 20px;
+}
+.tituloSecao h1 {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*Parallax01*/
+
+.Parallax01 {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.Parallax01 .joias05-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Parallax01 .joias05-img img {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+/*PRODUTOS A VENDA*/
+.maisVendidos {
+  margin-top: 100px;
+  width: 1200px;
+  margin-left: 20%;
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Define 4 colunas com largura igual */
+  grid-gap: 20px; /* Define o espaçamento entre os itens */
+}
+.produto {
+  height: 100%;
+  margin: 10px 10px 10px 10px;
+}
+.produto img {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.produto ul {
+  padding: 0;
+}
+.produto ul li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 2px;
+}
+.produto ul li a {
+  position: relative;
+  text-decoration: none;
+  align-items: center;
+  color: #000000;
+}
+#preco {
+  font-weight: 700;
+  font-size: x-large;
+}
+/*BUTTON*/
+.produto button {
+  height: auto;
+  position: relative;
+  width: 161px;
+  height: 30px;
+  margin-top: 1vh;
+  left: 0;
+  border-radius: 20px 20px 20px 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flexbox;
+  justify-content: center;
+  border: none;
+  background-color: #555555;
+  color: aliceblue;
+}
+.produto button:link,
+.produto button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.produto button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.produto button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.produto .comprar {
+  background-color: #555555;
+  color: #fff;
+}
+
+.produto button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.produto .comprar::after {
+  background-color: #555555;
+}
+
+.produto button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.produto button-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*FOOTER*/
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 0px;  
+  background: #dfd0ae;
+}
+.contatosSac {
+  display: flex;
+  position: relative;
+  padding: 10px 20px 10px 10px;
+  flex-direction: column;  
+  align-items: end;
+  align-self: first baseline;
+  text-align: start;
+}
+
+.contatoEmail a,
+i {
+  color: #000;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  padding: 7px;
+}
+.contatoPhone a,
+i {
+  color: #000;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  padding: 7px;
+}
+.instagram a,
+i {
+  color: #000;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  padding: 7px;
+}
+
+p,
+a {
+  font-family: "IM Fell DW Pica", serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Sarabun", sans-serif;
+}
