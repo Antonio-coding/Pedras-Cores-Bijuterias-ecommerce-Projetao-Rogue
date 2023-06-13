@@ -251,6 +251,27 @@ p {
   align-items: flex-start;
   height: 100vh;
 }
+/* imagens categorias */
+
+.img  {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 2px;
+  top: 9px;
+  
+  background: url(bracelete 03.png);
+}
+
+.categoriaBraceletes {
+  position: absolute;
+   width: 100px;
+   height: 1941px;
+   left: 344px;
+   top: 809px;
+
+
+}
 
 
 

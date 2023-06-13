@@ -1,9 +1,11 @@
-html, body{
+html,
+body {
   height: 100%;
   margin: 0px;
   padding: 0px;
+  background-color: #FEF5EC;
 }
-.body{
+.body {
   display: flex;
   flex-direction: column;
 }
@@ -85,11 +87,10 @@ html, body{
   position: absolute;
   width: 166px;
   height: 48px;
-  top:20px;
+  top: 20px;
   right: 0px;
   display: block;
   justify-content: flex-end;
-  
 }
 .navbar02 ul {
   display: flex;
@@ -110,29 +111,27 @@ html, body{
   right: 0;
   width: 92.6%;
   height: 1.85px;
-  background-color: #000; 
-   
+  background-color: #000;
 }
 
 /*TITULO DA SEÇÂO*/
 
 .tituloSecao {
-  margin-left: 20px;
+  margin-left: 75px;
+  position: relative;
 }
 .tituloSecao h1 {
   font-family: "Sarabun", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
   font-size: 34px;
-
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*Parallax01*/
 
 .Parallax01 {
   position: relative;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -155,6 +154,7 @@ html, body{
 }
 
 /*PRODUTOS A VENDA*/
+
 .maisVendidos {
   margin-top: 100px;
   width: 1200px;
@@ -175,6 +175,10 @@ html, body{
   height: auto;
   width: 100%;
   position: relative;
+  border: #817b7b;
+  border-style: groove;
+  border-radius: 25%;
+  
 }
 .produto ul {
   padding: 0;
@@ -196,7 +200,9 @@ html, body{
   font-weight: 700;
   font-size: x-large;
 }
+
 /*BUTTON*/
+
 .produto button {
   height: auto;
   position: relative;
@@ -222,22 +228,18 @@ html, body{
   transition: all 0.2s;
   position: absolute;
 }
-
 .produto button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 .produto button:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-
 .produto .comprar {
   background-color: #555555;
   color: #fff;
 }
-
 .produto button::after {
   content: "";
   display: inline-block;
@@ -250,16 +252,13 @@ html, body{
   z-index: -1;
   transition: all 0.4s;
 }
-
 .produto .comprar::after {
   background-color: #555555;
 }
-
 .produto button:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-
 .produto button-animated {
   animation: moveInBottom 5s ease-out;
   animation-fill-mode: backwards;
@@ -277,9 +276,8 @@ html, body{
   }
 }
 
-
-
 /*CADASTRO*/
+
 .conteinerCadastro {
   width: 100%;
   max-width: 400px;
@@ -292,10 +290,9 @@ html, body{
   font-size: large;
 }
 
-
 .cadastro h1 {
   font-size: 34px;
-  
+
   margin-top: 50px;
   margin-bottom: 50px;
   font-family: "Inter", sans-serif;
@@ -305,13 +302,11 @@ html, body{
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .dados {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .email,
 .name,
 .senha {
@@ -319,20 +314,17 @@ html, body{
   align-items: center;
   margin-bottom: 10px;
 }
-
 .email i,
 .name i,
 .senha i {
   margin-right: 10px;
 }
-
 .email input,
 .name input,
 .senha input {
   padding: 5px 10px;
   border-radius: 20px;
 }
-
 .send button {
   height: auto;
   position: relative;
@@ -358,22 +350,18 @@ html, body{
   transition: all 0.2s;
   position: absolute;
 }
-
 .send button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 .send button:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-
 .send .comprar {
   background-color: #555555;
   color: #fff;
 }
-
 .send button::after {
   content: "";
   display: inline-block;
@@ -386,21 +374,17 @@ html, body{
   z-index: -1;
   transition: all 0.4s;
 }
-
 .send .comprar::after {
   background-color: #555555;
 }
-
 .send button:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-
 .send button-animated {
   animation: moveInBottom 5s ease-out;
   animation-fill-mode: backwards;
 }
-
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -414,6 +398,7 @@ html, body{
 }
 
 /*FOOTER*/
+
 .footer {
   flex-shrink: 0;
   position: relative;
@@ -421,7 +406,7 @@ html, body{
   left: 0;
   width: 100%;
   height: 120px;
-  
+
   background: #dfd0ae;
 }
 #footer {
@@ -431,7 +416,6 @@ html, body{
   left: 0;
   width: 100%;
   height: 100px;
-  
   background: #dfd0ae;
 }
 .contatosSac {
@@ -443,7 +427,6 @@ html, body{
   align-self: first baseline;
   text-align: start;
 }
-
 .contatoEmail a,
 i {
   color: #000;
@@ -464,6 +447,83 @@ i {
   text-decoration: none;
   font-family: "Inter", sans-serif;
   padding: 7px;
+}
+
+/*PAGINA INCIAL*/
+
+/*CARROSUEL*/
+.top-section,
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.carousel {
+  width: 100%;
+  position: relative;
+  flex-basis: 50%;
+}
+.text {
+  margin-right: 75px;
+  margin-left: 75px;
+  position: relative;
+  width: 100%;
+  flex-basis: 50%;
+}
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+.carousel-slide {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  margin-top: 7px;
+}
+.carousel-slide > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+img:nth-child(2) {
+  animation-delay: 4s;
+}
+img:nth-child(3) {
+  animation-delay: 8s;
+}
+img:nth-child(4) {
+  animation-delay: 12s;
+}
+img:nth-child(5) {
+  animation-delay: 16s;
+}
+
+/*AMOSTRA*/
+.amostras {
+  position: relative;
+  left: 75px;
+  width: 90%;
 }
 
 p,
