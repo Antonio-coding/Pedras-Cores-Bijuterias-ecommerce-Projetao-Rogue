@@ -1,3 +1,12 @@
+html, body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+}
 .container_menu {
   position: relative;
   width: 100%;
@@ -10,6 +19,7 @@
 }
 #logo {
   position: relative;
+  margin: 20px 20px;
   width: 70px;
   height: auto;
   left: 0px;
@@ -21,7 +31,8 @@
 #titulo {
   position: absolute;
   width: 381px;
-  height: 41px;
+  height: 10px;
+  margin: 50px 10px;
   left: 105px;
   top: 14px;
   font-family: "IM Fell DW Pica", serif;
@@ -43,8 +54,8 @@
   justify-content: center;
   width: 566px;
   height: 44px;
-  left: 30%;
-  top: 39px;
+  left: 32%;
+  top: 60px;
   text-decoration: none;
   align-items: center;
 }
@@ -55,6 +66,7 @@
 }
 
 .navbar01 li {
+  font-size: 14px;
   margin-right: 10px;
 }
 
@@ -70,12 +82,14 @@
 /*NAVBAR02*/
 
 .navbar02 {
-  position: relative;
+  position: absolute;
   width: 166px;
   height: 48px;
-  display: flex;
+  top:20px;
+  right: 0px;
+  display: block;
   justify-content: flex-end;
-  align-items: end;
+  
 }
 .navbar02 ul {
   display: flex;
@@ -83,11 +97,21 @@
   padding: 0;
 }
 .navbar02 li {
-  margin-left: 10px;
+  margin-left: 0px;
 }
 .navbar02 li a {
   text-decoration: none;
   color: inherit;
+}
+
+.barra-horizontal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 92.6%;
+  height: 1.85px;
+  background-color: #000; 
+   
 }
 
 /*TITULO DA SEÇÂO*/
@@ -99,6 +123,7 @@
   font-family: "Sarabun", sans-serif;
   font-weight: 400;
   color: #000000;
+  font-size: 34px;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -134,6 +159,7 @@
   margin-top: 100px;
   width: 1200px;
   margin-left: 20%;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(
     4,
@@ -251,19 +277,168 @@
   }
 }
 
+
+
+/*CADASTRO*/
+.conteinerCadastro {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cadastro {
+  text-align: center;
+  font-size: large;
+}
+
+
+.cadastro h1 {
+  font-size: 34px;
+  
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Inter", sans-serif;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email,
+.name,
+.senha {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.email i,
+.name i,
+.senha i {
+  margin-right: 10px;
+}
+
+.email input,
+.name input,
+.senha input {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.send button {
+  height: auto;
+  position: relative;
+  width: 161px;
+  height: 30px;
+  margin-top: 1vh;
+  left: 0;
+  border-radius: 20px 20px 20px 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flexbox;
+  justify-content: center;
+  border: none;
+  background-color: #555555;
+  color: aliceblue;
+}
+.send button:link,
+.send button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.send button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.send button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.send .comprar {
+  background-color: #555555;
+  color: #fff;
+}
+
+.send button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.send .comprar::after {
+  background-color: #555555;
+}
+
+.send button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.send button-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 /*FOOTER*/
 .footer {
+  flex-shrink: 0;
   position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  
+  background: #dfd0ae;
+}
+#footer {
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100px;
-  margin-bottom: 0px;  
+  
   background: #dfd0ae;
 }
 .contatosSac {
   display: flex;
   position: relative;
-  padding: 10px 20px 10px 10px;
-  flex-direction: column;  
+  padding: 7px 14px 7px 7px;
+  flex-direction: column;
   align-items: end;
   align-self: first baseline;
   text-align: start;
